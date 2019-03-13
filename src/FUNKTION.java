@@ -1,11 +1,11 @@
 public enum FUNKTION {
-    AFLEVERING ,
     EMNESKIFT ("btw","forresten"),
+    AFLEVERING ("?","kan") ,
     FASTHOLDELSE,
     FEEDBACK ("lol","cool","sejt"),
-    LUKNING,
-    OVERTAGELSE,
-    ÅBNING("hej","hallo","halløj","hejsa","hi","yo","hvad","hvor","hvornår","hvem");
+    LUKNING ("nå","farvel"),
+    OVERTAGELSE (),
+    ÅBNING("hej","hallo","halløj","hejsa","hi","yo","hvad","hvor","hvornår","hvem","nå");
 
     private final String [] keywords;
 

@@ -25,11 +25,18 @@ public class Query {
             }
         }
         funktion = null;
+        int højest = 0;
         for (FUNKTION value : FUNKTION.values()) {
+            int point = 0;
             for(String funkKey : value.getKeywords()){
+
                 if(keywords.contains(funkKey)){
-                    funktion = value;
+                    point++;
                 }
+            }
+            if(point>højest){
+                højest=point;
+                funktion=value;
             }
         }
         if(funktion == null){
